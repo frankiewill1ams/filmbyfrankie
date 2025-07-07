@@ -1,0 +1,54 @@
+/* About Page Specific Styles */
+
+body {
+    background: #f7faff;
+}
+
+.hero-nav {
+    background: #007aff;
+    padding: 0.5rem 0;
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-nav ul {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+    box-shadow: none;
+}
+
+.hero-nav a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+    border-bottom: none;
+    padding-bottom: 0;
+    letter-spacing: 1px;
+    font-family: 'Alumni Sans SC', sans-serif;
+}
+
+.hero-nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    color: #007aff;
+}
