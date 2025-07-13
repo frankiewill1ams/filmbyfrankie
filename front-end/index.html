@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film by Frankie</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="hero-header">
-        <div class="hero-image-container">
-            <img src="photos/hero.jpg" alt="Film by Frankie Hero" class="hero-image">
-            <nav class="hero-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-            <div class="hero-title">
-                <h1>film by frankie</h1>
-                <h4>photography by frankie williams</h4>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filmbyfrankie – Modern Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+
+    <!-- Navbar -->
+    <header class="absolute top-0 left-0 w-full z-10">
+      <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+        <h1 class="text-xl font-extrabold tracking-tight text-gray-900">filmbyfrankie</h1>
+        <nav class="space-x-6 text-sm font-medium text-gray-700">
+          <a href="#portfolio" class="hover:text-gray-900 transition">Portfolio</a>
+          <a href="#about" class="hover:text-gray-900 transition">About</a>
+          <a href="#contact" class="hover:text-gray-900 transition">Contact</a>
+        </nav>
+      </div>
     </header>
-    <main>
-        <section>
-            <h2>Featured Content</h2>
-            <p>This is a basic starting point for your website. Add your content here!</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Film by Frankie. All rights reserved.</p>
-    </footer>
-</body>
+
+    <!-- Hero Section -->
+    <section class="h-screen w-full bg-cover bg-center flex items-center justify-center text-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?minimal,photography');">
+      <div class="absolute inset-0 bg-white bg-opacity-60"></div>
+      <div class="relative z-10 px-6">
+        <h2 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4">Framing Everyday Beauty</h2>
+        <p class="text-lg md:text-xl text-gray-700 mb-6 max-w-2xl mx-auto">Timeless, thoughtful photography crafted with light and feeling.</p>
+        <a href="#portfolio" class="inline-block bg-gray-900 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-700 transition">Explore My Work</a>
+      </div>
+    </section>
+
+  </body>
 </html>
+
+
 
