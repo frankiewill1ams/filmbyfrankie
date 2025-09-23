@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>filmbyfrankie – Photography</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
     <style>
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', 'Inter', sans-serif;
+        font-weight: 600;
+      }
+
+      /* Make headings and bold utilities more statement-like */
+      h1, h2, h3, h4, h5, h6, .font-extrabold, .font-bold {
+        font-family: 'Montserrat', 'Inter', sans-serif;
+        font-weight: 900;
       }
     </style>
   </head>
@@ -17,50 +24,49 @@
     <!-- Navbar -->
 <header class="absolute top-0 left-0 w-full z-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-center items-center">
-    <nav class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-4 sm:mt-6 font-bold text-lg sm:text-2xl text-gray-300">
+    <nav class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mt-4 sm:mt-6 font-bold text-lg sm:text-2xl text-white">
       <a href="portfolio.html" class="hover:text-gray-900 transition">Portfolio</a>
       <a href="about.html" class="hover:text-gray-900 transition">About</a>
     </nav>
   </div>
 </header>
 
-<!-- Hero Section -->
-<section
-  class="h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center px-4"
-  style="background-image: url('front-end/photos/hero.jpeg');"
->
-  <a
-    href="index.html"
-    class="text-4xl sm:text-6xl md:text-8xl lg:text-10xl font-extrabold tracking-tight text-gray-300 mb-4"
->
-    filmbyfrankie
-</
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center text-center px-4"
+      style="background-image: url('front-end/photos/hero.jpg');"
+    >
+      <a
+        href="index.html"
+        class="text-4xl sm:text-6xl md:text-8xl lg:text-10xl font-extrabold tracking-tight text-white mb-4"
+      >
+        FRANKIE
+      </a>
 
-  <a
-    href="portfolio.html"
-    class="border border-white text-white px-6 py-3 text-sm sm:text-base rounded-full font-semibold hover:bg-white hover:text-gray-900 mt-4"
-  >
-    Explore the Gallery
-  </a>
-</section>
-
-
+      <!-- CTA: centered and positioned just above the arrow -->
+      <a
+        href="portfolio.html"
+        class="absolute left-1/2 transform -translate-x-1/2 bottom-28 sm:bottom-32 border border-white text-white px-6 py-3 text-xs sm:text-sm rounded-full font-semibold hover:bg-white hover:text-gray-800"
+      >
+        Explore the Gallery
+      </a>
 
       <!-- arrow down -->
-        <a href="#next-section" class="group flex items-center justify-center" style="position: absolute; bottom: 48px; left: 50%; transform: translateX(-50%);">
-         <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <a href="#next-section" class="group flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 bottom-6">
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <polyline points="30,35 50,65 70,35"
-          fill="none"
-          stroke="white"
-          stroke-width="8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="group-hover:stroke-gray-800 transition duration-300"
+            fill="none"
+            stroke="white"
+            stroke-width="8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="group-hover:stroke-gray-800 transition duration-300"
           />
-          </svg>
-        </a>
+        </svg>
+      </a>
 
     </section>
+    
 
     <!-- Next Section -->
 <section id="next-section" class="w-full bg-gray-100 text-gray-900 py-20">
@@ -72,7 +78,7 @@
          class="block w-full h-full rounded-xl ring-offset-2 focus:outline-none focus:ring-4 focus:ring-blue-400 active:scale-95 transition transform duration-150">
         <img src="front-end/photos/file/landscape.jpeg" 
              alt="Landscape" 
-             class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer" />
+             class="w-full h-full object-cover shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer" />
       </a>
       <div>
         <h4 class="text-center text-2xl font-bold mb-2">Landscapes</h4>
@@ -88,7 +94,7 @@
          class="block w-full h-full rounded-xl ring-offset-2 focus:outline-none focus:ring-4 focus:ring-blue-400 active:scale-95 transition transform duration-150">
         <img src="front-end/photos/file/portrait.jpg" 
              alt="Portrait" 
-             class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer" />
+             class="w-full h-full object-cover shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer" />
       </a>
       <div>
         <h4 class="text-center text-2xl font-bold mb-2">Portraiture</h4>
@@ -104,7 +110,7 @@
          class="block w-full h-full rounded-xl ring-offset-2 focus:outline-none focus:ring-4 focus:ring-blue-400 active:scale-95 transition transform duration-150">
         <img src="front-end/photos/file/film.jpg" 
              alt="Film" 
-             class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer" />
+             class="w-full h-full object-cover shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer" />
       </a>
       <div>
         <h4 class="text-center text-2xl font-bold mb-2">Film</h4>
